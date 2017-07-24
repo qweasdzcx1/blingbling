@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="stylesheet" href="../css/personage.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
+		<title></title>
+		<script>
+			(function(win, doc) {
+				//浏览器缩放时
+				win.onresize = function() {
+					change();
+				};
+				change();
+
+				function change() {
+					var oFs = doc.documentElement.clientWidth / (320 / 20);
+
+					//设置根目录字体大小
+					doc.documentElement.style.fontSize = oFs + 'px';
+				}
+			})(window, document);
+		</script>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="personage-box">
+				<header>
+					<div>
+						<img src="../img/logo.png" alt="" />
+						<p>
+							<span>SZ1049</span>
+							<span><i class="fa fa-fw fa-user"></i>个人用户</span>
+						</p>
+					</div>
+				</header>
+				<div class="count">
+					<div class="count-l">
+						<p>账户共计应用</p>
+						<p>共<span>3</span>（款应用）</p>
+					</div>
+					<div class="count-r">
+						<p>近七日注册量</p>
+						<img src="../img/home_07.png" alt="" />
+					</div>
+				</div>
+				<!--设置-->
+				<div class="message">
+					<ul>
+						<li>
+							<a href="pc.html">
+								<h2><img src="../img/home_11.png" alt="" /></h2>
+								<div>
+									<span>应用信息</span>
+									<span>账户共计3款应用<i class="fa fa-fw fa-chevron-right"></i></span>
+
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="../zcltj/zc.html">
+								<h2><img src="../img/home_14.png" alt="" /></h2>
+								<div>
+									<span>注册量统计</span>
+									<span>今日注册486人<i class="fa fa-fw fa-chevron-right"></i></span>
+
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="zhxx.html">
+								<h2><img src="../img/home_17.png" alt="" /></h2>
+								<div>
+									<span>账户信息</span>
+									<span><i class="fa fa-fw fa-chevron-right"></i></span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="xitong.html">
+								<h2><img src="../img/home_20.png" alt="" /></h2>
+								<div>
+									<span>系统设置</span>
+									<span><i class="fa fa-fw fa-chevron-right"></i></span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

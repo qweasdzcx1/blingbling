@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="../css/geren.css" />
+	<script src="../js/jquery-3.1.1.js"></script>
+	<body>
+		<header class="hea">
+			<a href="xitong.html">
+				<span>&lt;</span>
+			</a>
+			<p>个人资料</p>
+		</header>
+	<nav class="nav1">
+			 <div id="toux"> </div>
+		     <div class="hao">
+		     	<p>SZ1049</p>
+		     	<img src="../img/2017-07-22_075043.png">
+		     </div>
+		     <div class="d1">
+		     	<a href="#">
+		     	<p>未认证</p>
+		     </a>
+		     </div>
+		
+		</nav>
+		
+		<div class="ul1">
+		<ul>
+                <li class="li1"><p>完善个人资料可享受更多闪住优惠</p></li>
+                 <a href="#"><li>
+                 	<span class="left">Email</span>
+                    <span class="right">未添加邮箱  &gt;</span>
+                 </li></a>
+                 <a href="#"><li>
+                 	<span class="left">联系人</span>
+                    <span class="right"style="color: #000000;">宝哥  &gt;</span>
+                 </li></a>
+                 <a href="#"><li>
+                 	<span class="left">手机号码</span>
+                    <span class="right" style="color: #000000;">166666666666  &gt;</span>
+                 </li></a>
+                 <a href="#"><li>
+                 	<span class="left">身份证正面</span>
+                    <span class="right">未上传身份证信息  &gt;</span>
+                 </li></a>
+                 <a href="#"><li>
+                 	<span class="left">身份证反面</span>
+                    <span class="right">未上传身份证信息  &gt;</span>
+                 </li></a>	
+		</ul>
+	</div>
+		
+		<div class="shen">
+			<p>提交审核</p>
+		</div>
+		
+		
+		<script>
+			
+			(function(win,doc){
+			//浏览器缩放时
+			win.onresize=function(){
+				change();	
+			};
+			change();
+			function change(){
+				var oFs=doc.documentElement.clientWidth/(320/20);
+		
+				//设置根目录字体大小
+				doc.documentElement.style.fontSize=oFs+'px';	
+			}	
+		})(window,document);
+		
+		</script>
+		
+		<script>
+		       $(".shen").click(function(){
+		       	alert("提交成功")
+		       })
+		</script>
+		
+	</body>
+</html>

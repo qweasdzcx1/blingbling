@@ -1,0 +1,182 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+a{
+	color: black;
+}
+
+.box,
+body,
+html {
+	height: 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	overflow: hidden;
+	justify-content: space-between;
+	font-family: "微软雅黑";
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.personage-box {
+	-webkit-flex-grow: 1;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	font-size: 12px;
+	background: #F5F5F5;
+}
+
+.personage-box>div {
+	width: 100%;
+	overflow: hidden;
+}
+
+.personage-box header {
+	width: 100%;
+	background: orange;
+	text-align: center;
+}
+
+.personage-box header>div {
+	width: 40%;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+.personage-box header>div img {
+	width: 70%;
+	margin-top: 2rem;
+}
+
+.personage-box header>div p {
+	display: flex;
+	margin-top: .6rem;
+}
+
+.personage-box header>div p span:nth-child(1) {
+	color: white;
+	font-size: .6rem;
+	padding-top: .2rem;
+}
+
+.personage-box header>div p span:nth-child(2) {
+	display: block;
+	width: 90%;
+	padding: .2rem;
+	background: #FFC801;
+	color: white;
+	margin-left: 10px;
+}
+
+.personage-box header>div p span:nth-child(2) i {
+	margin-right: .1rem;
+}
+
+.personage-box .count {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background: white;
+	padding-bottom: 5px;
+}
+
+.personage-box .count .count-l {
+	width: 40%;
+	margin-top: .6rem;
+}
+
+.personage-box .count .count-l p {
+	margin-left: .5rem;
+	font-size: .6rem;
+	color: #D4D4D4;
+}
+
+.personage-box .count .count-l p:nth-child(2) {
+	margin-top: 1rem;
+}
+
+.personage-box .count .count-l p:nth-child(2) span {
+	font-size: 1.2rem;
+	color: red;
+}
+
+.personage-box .count .count-r {
+	width: 60%;
+	margin-top: .6rem;
+	padding-left: 10%;
+	padding-right: 10px;
+	color: #D4D4D4;
+}
+
+.personage-box .count .count-r img {
+	width: 100%;
+	margin-top: .3rem;
+}
+
+.personage-box .message {
+	width: 100%;
+	margin-top: .7rem;
+}
+
+.personage-box .message ul {
+	width: 100%;
+	border-top: #DADADA;
+}
+
+.personage-box .message ul li a{
+	width: 100%;
+	display: flex;
+	padding-top: .3rem;
+	padding-left: .5rem;
+	background: white;
+}
+
+.personage-box .message ul li h2 {
+	width: 10%;
+}
+
+.personage-box .message ul li h2 img {
+	width: 70%;
+}
+
+.personage-box .message ul li div {
+	width: 90%;
+	display: flex;
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: .3rem;
+	justify-content: space-between;
+}
+
+.personage-box .message ul li div span {
+	font-size: .6rem;
+	margin-top: .2rem;
+}
+
+.personage-box .message ul li div span:nth-child(2) {
+	color: #FA5C05;
+	margin-right: .2rem;
+}
+
+.personage-box .message ul li div span:nth-child(2) i {
+	color: #E5E5E5;
+	margin-left: .2rem;
+}
+
+.personage-box .message ul li:last-child {
+	margin-top: .7rem;
+}
+
+
+/*# sourceMappingURL=personage.css.map */

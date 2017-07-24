@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no"/>
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<!--<meta name="apple-mobile-web-app-status-bar-style" content='black' />-->
+		<link rel="stylesheet" type="text/css" href="css/zc.css"/>
+		<script src="angular.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="angular-route.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="test">
+		<header class="header-xi">
+			<div class="header1">
+			   <a href="../html/personage.html"><span>&lt</span></a>
+			   <p  ng-click = "show1()">系统设置</p>
+			</div>
+			
+			<div class="show" ng-hide = "show">
+			<ul>
+				<li>
+					<div class="div0">全部</div>
+				</li>
+				<li>
+					<div class="div1">
+					<div class="div2"></div>
+					<div class="div3">应用场景</div>	
+					<div class="div4"></div>
+					</div>
+					<div class="div5">
+						<div>APP</div>
+						<div>H5/web</div>
+					</div>
+				</li>
+				<li>
+					<div class="div1">
+					<div class="div2"></div>
+					<div class="div3">注册方式</div>	
+					<div class="div4"></div>
+					</div>
+					<div class="div5">
+						<div>闪注</div>
+						<div>短信</div>
+					</div>
+				</li>
+			</ul>
+			<div class="div9"></div>
+		</div>
+			<img src="111.png" />
+		</header>
+		<div class="center">
+	         <ul class="ul1">
+	         	<li><a href="#/jr">今日注册量</a></li>
+	         	<li><a href="#/yz">一周注册量</a></li>
+	         	<li><a href="#/yy">一个月注册量</a></li>
+	         </ul>
+		</div>
+		<div ng-view></div>
+		<script type="text/ng-template" id="jr">
+			<footer>
+				<ul>
+					<li ng-repeat="item in arr1">
+						<p>{{item.phone}}</p>
+		                <div class="div1">
+		                	<div>{{item.aa}}</div>
+		                	<div>{{item.bb}}</div>
+		                	<div>{{item.ee}}</div>
+		                </div>
+						<p style="color:#ADADAD;">{{item.data}}</p>
+					</li>
+				</ul>
+			</footer>
+		</script>
+		<script type="text/ng-template" id="yz">
+			<footer>
+				<ul>
+					<li ng-repeat="item in arr2">
+						<p>{{item.phone}}</p>
+		                <div class="div1">
+		                	<div>{{item.aa}}</div>
+		                	<div>{{item.bb}}</div>
+		                	<div>{{item.ee}}</div>
+		                </div>
+						<p style="color:#ADADAD;">{{item.data}}</p>
+					</li>
+				</ul>
+			</footer>
+		</script>
+		<script type="text/ng-template" id="yy">
+			<footer>
+				<ul>
+					<li ng-repeat="item in arr3">
+						<p>{{item.phone}}</p>
+		                <div class="div1">
+		                	<div>{{item.aa}}</div>
+		                	<div>{{item.bb}}</div>
+		                	<div>{{item.ee}}</div>
+		                </div>
+						<p style="color:#ADADAD;">{{item.data}}</p>
+					</li>
+				</ul>
+			</footer>
+		</script>
+	</body>
+	<script src="zc.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = angular.module('app',['ngRoute']);
+			app.controller('test',function($scope,$http){
+				$http.get("data/zc.json").success(function(data){
+					$scope.arr1 = data.sj;
+					$scope.arr2 = data.sk;
+					$scope.arr3 = data.sl;
+//					$scope.info = data.info;
+				    $scope.show = true;
+				    $scope.show1 = function(){
+					   $scope.show = !$scope.show
+				    }
+				})
+			})
+			app.config(function($routeProvider){
+				$routeProvider.when('/jr',{
+					templateUrl:"jr"
+				}).when('/yz',{
+					templateUrl:"yz"
+				}).when('/yy',{
+					templateUrl:"yy"
+				}).otherwise({
+					redirectTo:"/jr"
+				})
+			})
+	</script>
+</html>

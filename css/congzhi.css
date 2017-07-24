@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px; }
+
+header {
+  height: 2rem;
+  background: #fa5a2a;
+  display: flex;
+  line-height: 2rem;
+  color: white; }
+
+header > a {
+  color: white;
+  padding-left: 0.6rem; }
+
+header > a > i {
+  font-size: 22rem; }
+
+header > p {
+  margin-right: 0.9rem;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 0.75rem; }
+
+article div:nth-of-type(1) {
+  background: #fa5a2a; }
+  article div:nth-of-type(1) img {
+    width: 2.5rem;
+    margin-left: 44%;
+    margin-bottom: 0.45rem; }
+  article div:nth-of-type(1) p {
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    padding-bottom: 0.5rem; }
+article div:nth-of-type(2) {
+  width: 100%;
+  height: 1.45rem;
+  line-height: 1.45rem;
+  background: #f5f5f5; }
+  article div:nth-of-type(2) p {
+    font-size: 0.6rem;
+    color: #696969;
+    margin-left: 0.6rem; }
+article .ul1 {
+  width: 100%; }
+  article .ul1 li {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    list-style: none;
+    border-bottom: 1px solid #ccc; }
+    article .ul1 li input {
+      margin-top: 0.7rem;
+      margin-left: 0.4rem;
+      float: left; }
+    article .ul1 li img {
+      margin-left: 0.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-top: 0.37rem;
+      float: left; }
+    article .ul1 li p:nth-of-type(1) {
+      font-size: 0.6rem;
+      margin-left: 0.3rem;
+      float: left; }
+    article .ul1 li p:nth-of-type(2) {
+      font-size: 0.6rem;
+      text-align: right;
+      float: right;
+      margin-right: 0.7rem; }
+    article .ul1 li:after {
+      clear: both;
+      display: block;
+      content: ""; }
+article div:nth-of-type(3) {
+  margin: 0 auto;
+  width: 14.25rem;
+  height: 1.5rem;
+  border: 1px dashed orange;
+  line-height: 1.5rem;
+  margin-top: 0.625rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: orange; }
+article div:nth-of-type(4) {
+  margin: 0 auto;
+  width: 14.72rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  background: #fed555;
+  margin-top: 0.75rem; }
+  article div:nth-of-type(4) input {
+    font-size: 0.65rem;
+    color: white;
+    font-size: 0.6rem; }
+
+/*# sourceMappingURL=congzhi.css.map */

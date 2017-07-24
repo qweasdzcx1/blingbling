@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+}
+
+.header-xi {
+	width: 16rem;
+	height: 7.9rem;
+	background: #fa5a2a;
+}
+
+.header-xi span {
+	font-size: 0.65rem;
+	color: white;
+	float: left;
+	line-height: 1.1rem;
+	margin-left: 0.25rem;
+}
+
+.header-xi p {
+	font-size: 0.30rem;
+	color: white;
+	float: left;
+	line-height: 1.1rem;
+	margin-left: 6rem;
+}
+
+.header-xi img {
+	width: 100%;
+	height: 6.8rem;
+}
+
+.header-xi .header-xi:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.center {
+	width: 100%;
+	height: 2rem;
+}
+
+.center .ul1 {
+	display: flex;
+	width: 100%;
+	height: 2rem;
+	list-style: none;
+	background-color: orange;
+	color: white;
+}
+
+.center .ul1 li {
+	width: 5.66666667rem;
+	height: 2rem;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.center .ul1 li a {
+	text-decoration: none;
+	font-size: 0.6rem;
+}
+
+footer {
+	width: 100%;
+	height: 19rem;
+}
+
+footer ul {
+	width: 100%;
+	height: 17.8rem;
+	font-size: 0.5rem;
+}
+
+footer ul li {
+	width: 100%;
+	height: 4.45rem;
+	border: 1px solid #BABABA;
+	padding: 0.5rem;
+}
+
+footer ul li .div1 {
+	display: flex;
+}
+
+footer ul li .div1 div {
+	border: 1px solid orange;
+	border-radius: 20px;
+	margin-left: 0.2rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+.show {
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	margin-top: -1rem;
+	background: white;
+	top: 60px;
+	padding: 10px 0;
+}
+
+.show ul {
+	width: 90%;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	margin-top: 10px;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.show ul li {
+	width: 100%;
+	line-height: 3rem;
+}
+
+.show ul li .div0 {
+	width: 3rem;
+	height: 1rem;
+	border: 1px solid orange;
+	text-align: center;
+	line-height: 1rem;
+	background: orange;
+	color: white;
+}
+
+.show ul li .div1 {
+	width: 100%;
+	height: 1rem;
+	display: flex;
+	font-size: 0.5rem;
+}
+
+.show ul li .div1 .div2 {
+	width: 40%;
+	height: 1px;
+	background: #ADADAD;
+}
+
+.show ul li .div1 .div3 {
+	margin-top: -1.5rem;
+}
+
+.show ul li .div1 .div4 {
+	width: 40%;
+	height: 1px;
+	background: #ADADAD;
+}
+
+.show ul li .div5 {
+	width: 100%;
+	height: 2rem;
+	display: flex;
+}
+
+.show ul li .div5 div {
+	width: 3rem;
+	height: 1rem;
+	font-size: 0.5rem;
+	text-align: center;
+	line-height: 1rem;
+	background-color: #939393;
+	margin-left: 0.5rem;
+}
+
+
+/*# sourceMappingURL=zc.css.map */

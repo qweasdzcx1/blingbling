@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css" />
+		<script src="../js/index.js"></script>
+		<script src="../js/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/zhxx.css" />
+
+	</head>
+
+	<body>
+		<header class="header-xi">
+			<a href="personage.html"><span class="iconfont icon-back"></span></a>
+			<p>账户信息▼</p>
+		</header>
+		<div id="da">
+			<div class="yc">
+				<div class="btn1">
+					<a href="javascript:;">全部账户</a>
+				</div>
+				<div class="box">
+					<p id="p1">
+						应用
+					</p>
+				</div>
+				<ul>
+					<li>
+						<a href="javascript:;">天天消消乐</a>
+					</li>
+					<li>
+						<a href="javascript:;">大话西游</a>
+					</li>
+					<li>
+						<a href="javascript:;">亡者农药</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="zh_content">
+			<ul class="zh_content_ul">
+				<li>
+					<p>闪注账户</p>
+					<p>剩余量：<span>9500</span>条</p>
+				</li>
+				<li>
+					<p>短信账户</p>
+					<p>剩余量：<span>865</span>条</p>
+				</li>
+			</ul>
+			<div class="zh_content_div">
+				<div class="da">
+					<div class="zh_content_div_1">
+						<a href="Prepaid phone details.html">
+
+							<div><img src="../img/money.png" /><span style="margin-left: 0.5rem;">我的充值</span></div>
+							<div>查看明细 <i class="iconfont icon-arrow-right" style="font-size: 1rem;"></i></div>
+						</a>
+					</div>
+					<ul>
+						<li>
+							<a href="javascript:;"><span>闪注充值量</span><br/><span class="aaa">20000条</span>
+								<br/>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><span>短信充值量</span><br/><span class="aaa">8502条</span>
+								<br/>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<div class="da" style="margin-top: 20px;">
+					<div class="zh_content_div_1">
+						<a href="Consumption details.html">
+							<div><img src="../img/jian.png" /><span style="margin-left: 0.5rem;">我的消费</span></div>
+							<div>查看明细 <i class="iconfont icon-arrow-right" style="font-size: 1rem;"></i></div>
+						</a>
+					</div>
+					<ul>
+						<li>
+							<a href="javascript:;"><span>闪注消费量</span><br/><span class="aaa">962条</span>
+								<br/>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;"><span>短信消费量</span><br/><span class="aaa">8502条</span>
+								<br/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$("header>p").click(function() {
+				$("#da").toggle();
+				$("#da").css({
+					"background": "rgba(0,0,0,0.5)"
+				})
+			})
+		</script>
+	</body>
+
+</html>

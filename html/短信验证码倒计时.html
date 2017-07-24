@@ -1,0 +1,45 @@
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.time{
+				border: solid #FB110F 2px;
+				color: #FA2A27;
+				background: white;
+				width: 30px;
+				height: 30px;
+				border-radius:50% ;
+			}
+		</style>
+	</head>
+
+	<body>
+		<input type="button" id="btn" value="验证码" style="text-align: center;" />
+	</body>
+	<script type="text/javascript">
+		var wait = 60;
+
+		$("#btn").click(function time() {
+			if(wait == 0) {
+				$("#btn").removeAttr("disabled");
+				$("#btn").removeClass("time")
+				$("#btn").val("验证码");
+				wait = 60;
+			} else {
+
+				$("#btn").attr("disabled", true);
+				$("#btn").val(wait+'s');
+				$("#btn").addClass("time")
+				wait--;
+				setTimeout(function() {
+					time()
+				}, 1000)
+			}
+		})
+	</script>
+
+</html>

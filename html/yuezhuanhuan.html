@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/yuezhuanhuan.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="daydayhappy.html">
+				<i class="icon iconfont icon-back"></i>
+			</a>
+			<p>余额转换</p>
+		</header>	
+		<article>
+			<div>
+				<img src="../img/pic00.png"/>
+			</div>
+			<div>
+				<p>您仅可以将短信量转化为闪注量</p>
+			</div>
+			<div>
+				<p>当前账户余额为100条</p>
+			</div>
+			<div>
+				<p><span>短信量</span>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="你最多可转换短信量"/></p>
+			</div>
+			<div>
+				<p><span>闪注量</span>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="0"/></p>
+			</div>
+			<div>
+				<input type="button" value="余额转换" id="btn1"/>
+			</div>
+			<div id="kuai">
+				<div>余额转换成功</div>
+				<div id="btn2">确定</div>
+			</div>
+		</article>
+	</body>
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function(win,doc){
+			//浏览器缩放时
+			win.onresize=function(){
+				change();	
+			};
+			change();
+			function change(){
+				var oFs=doc.documentElement.clientWidth/(320/20);
+		
+				//设置根目录字体大小
+				doc.documentElement.style.fontSize=oFs+'px';	
+			}	
+		})(window,document);
+		$("#btn1").click(function(){
+			$("#kuai").css("display", "block");
+		})
+		$("#btn2").click(function(){
+			$("#kuai").css("display", "none");
+		})
+	</script>
+</html>

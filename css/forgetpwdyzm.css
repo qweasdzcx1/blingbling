@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.box,
+body,
+html {
+	height: 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	overflow: hidden;
+	justify-content: space-between;
+	font-family: "微软雅黑";
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.forget-pwd {
+	-webkit-flex-grow: 1;
+	width: 100%;
+	overflow: auto;
+}
+
+.forget-pwd>div {
+	width: 100%;
+	overflow: hidden;
+}
+
+.forget-pwd header {
+	height: 2rem;
+	color: black;
+	display: flex;
+	line-height: 2rem;
+}
+
+.forget-pwd header a {
+	padding-left: 0.6rem;
+}
+
+.forget-pwd header a i {
+	font-size: .8rem;
+	color: #5A5A5A;
+}
+
+.forget-pwd header p {
+	margin-right: 0.6rem;
+	flex-grow: 1;
+	text-align: center;
+	font-size: .8rem;
+	color: #5A5A5A;
+}
+
+.forget-pwd .user-box {
+	width: 100%;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.forget-pwd .user-box .title {
+	width: 90%;
+	margin: 0 auto;
+	text-align: left;
+	font-size: .8rem;
+	color: #5A5A5A;
+}
+
+.forget-pwd .user-box .username {
+	width: 90%;
+	padding-top: 2rem;
+	display: flex;
+	border-bottom: 1px solid #EEEEEE;
+	padding-bottom: .3rem;
+	margin: 0 auto;
+}
+
+.forget-pwd .user-box .username span {
+	width: 10%;
+}
+
+.forget-pwd .user-box .username span img {
+	width: 60%;
+}
+
+.forget-pwd .user-box .username input {
+	width: 80%;
+	border: 0;
+	margin-left: .2rem;
+	font-size: .6rem;
+}
+
+.forget-pwd .user-box .username a {
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	border: 2px solid red;
+	font-size: 10px;
+	color: red;
+	border-radius: 50%;
+}
+
+.forget-pwd .login-box {
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.forget-pwd .login-box a {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	background: #FFC830;
+	color: white;
+	font-size: .8rem;
+	border-radius: 40px;
+}
+
+
+/*# sourceMappingURL=forgetpwdyzm.css.map */

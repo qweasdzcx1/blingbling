@@ -1,0 +1,134 @@
+*{margin: 0;padding: 0;font-size: 12px;}
+body{
+    position: relative;
+}
+header{
+    height: 2rem;
+    background: #fa5a2a;
+    display: flex;
+    line-height: 2rem;
+    color: white;
+}
+header>a{
+    color: white;
+    padding-left: 0.6rem;
+}
+header>a>i{
+    font-size: 22rem;
+}
+header>p{
+    margin-right: 0.9rem;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.75rem;
+}
+article{
+    div:nth-of-type(1){
+        height: 56.5px;
+        img{
+            width: 100%;
+//          height: 1.5rem;
+        }
+    }
+    div:nth-of-type(2){
+        p{
+            font-size: 0.6rem;
+            line-height: 1.2rem;
+            text-align: center;
+            background: #fa5a2a;
+            margin: 0;padding: 0;
+            padding-bottom: 0.4rem;
+            color: white;
+        }
+    }
+    div:nth-of-type(3){
+        width: 100%;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        background: #f5f5f5;
+        p{
+            font-size: 0.6rem;
+            color: #696969;
+            margin-left: 0.6rem;
+        }
+    }
+    div:nth-of-type(4){
+        width: 100%;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        border-bottom: 1px solid #ccc;
+        p{
+            font-size: 0.6rem;
+            color: #ccc;
+            margin-left: 0.6rem;
+            span{
+                color: black;
+            }
+        }
+    }
+    div:nth-of-type(5){
+        width: 100%;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        border-bottom: 1px solid #ccc;
+        p{
+            font-size: 0.6rem;
+            color: #ccc;
+            margin-left: 0.6rem;
+            span{
+                color: black;
+            }
+        }
+    }
+    div:nth-of-type(6){
+        margin: 0 auto;
+        width: 14.72rem;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        background: #fed555;
+        margin-top: 0.75rem;
+        input{
+            font-size: 0.65rem;
+            color: white;
+            font-size: 0.6rem;
+        }
+    }
+    div:nth-of-type(7){
+        width: 100%;
+        height:28.4rem;
+        background:rgba(0,0,0,0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        div:nth-of-type(1){
+            position: absolute;
+            top: 28.5%;
+            left: 2.45rem;
+            margin:  0 auto;
+            height: 4.45rem;
+            line-height: 4.45rem;
+            width: 11.25rem;
+            border-radius:5% 5% 0 0;
+            background: white;
+            font-size: 0.65rem;
+            text-align: center;
+            
+        }
+        div:nth-of-type(2){
+            position: absolute;
+            top: 44.1%;
+            left: 2.45rem;
+            margin: 0 auto;
+            text-align: center;
+            width: 11.25rem;    
+            height: 1.55rem;        
+            line-height: 1.6rem;
+            background: orange;
+            border-radius:0 0 5% 5%;
+            color: white;
+            font-size: 0.65rem;
+        }    
+    }
+}

@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #F5F5F5;
+}
+header{
+	height: 2rem;
+	background: #FFAC2E;
+	display: flex;
+	line-height: 2rem;
+	color: white;
+	
+}
+header>a{
+	color: white;
+	padding-left: 0.6rem;
+}
+header>a>span{
+	font-size: 1rem;
+}
+
+header>p{
+	margin-right: 0.6rem;
+	flex-grow: 1;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+.hea:after{
+	display: block;
+	clear: both;
+	content: '';
+}
+.nav1{
+	height: 5rem;
+	margin-top:1rem ;
+	background: white;
+}
+.nav1 #toux{
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	background: url("../img/2017-07-21_205104.png");
+	background-size: 100% 100%;
+	float: left;
+	margin-top: 0.8rem;
+	margin-left:0.7rem ;
+}
+.nav1 .hao{
+	width: 4.1rem;
+	height: 3.5rem;
+	/*border: 1px solid;*/
+	float: left;
+	margin-left: 0.3rem;
+	margin-top: 0.9rem;
+}
+.nav1 span{
+	font-size: 0.8rem;
+	color: white;
+}
+.nav1 img{
+	width: 3.8rem;
+	height: 1.2rem;
+	float: left;
+	margin-left: 0.1rem;
+	margin-top: 0.1rem;
+}
+.nav1 #p1{
+	background: #FFC801;
+}
+.nav1 .d1{
+	width: 6.0rem;
+    height: 1.5rem;
+	margin-top: 1.75rem;
+	float: right;
+}
+.d1 span{
+	
+	font-size: 0.8rem;
+	color: #FFC801;
+}
+.nav2{
+	height: 2.5rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.8rem;
+	border: 1px solid#666666;
+	cursor: pointer;
+}
+.nav2 span{
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+}
+.nav2  a{
+	color: black;
+}
+.nav2 .left{
+	margin-left: -3.0rem;
+}
+.nav2 .right{
+	margin-right: -3.0rem;
+}
+
+#gg a{
+	color: #000000;
+}
+
+
+.nav3{
+	height: 2.5rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid#666666;
+	cursor: pointer;
+}
+.nav3 span{
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+	margin-left: -7rem;
+}
+.nav3 .right{
+	margin-right: -7rem;
+}
+.nav3  a{
+	color: black;
+}
+#gg1 a{
+	color: #000000;
+}
+
+.nav4{
+	height: 2.5rem;
+	background: white;
+	border: 1px solid#666666;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+.nav4 span{
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+	margin-left: 5.95rem;
+}
+.nav4  a{
+	color: black;
+}
+#gg2 a{
+	color: #000000;
+}
+
+
